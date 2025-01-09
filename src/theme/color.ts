@@ -14,5 +14,6 @@ export const color = {
   blue: {
     100: 'linear-gradient(to right, #6AB2FF, #007BFF',
     200: '#077FFF',
+    300: 'rgb(5, 126, 255, 0.2)',
   },
 };
