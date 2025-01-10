@@ -72,12 +72,12 @@ const Btn = styled.button`
   padding: 12px 54px;
   border-radius: 24px;
   color: ${color.gray[50]};
-  border: 1px solid ${color.gray[50]};
+  border: 0.5px solid ${color.gray[50]};
   font-size: 16px;
   font-weight: 400;
   background-color: transparent;
   &:hover {
     color: ${color.blue[200]};
-    border: 1px solid ${color.blue[200]};
+    border: 0.5px solid ${color.blue[200]};
   }
 `;
