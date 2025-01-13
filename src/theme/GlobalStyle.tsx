@@ -23,12 +23,16 @@ export const GlobalStyle = createGlobalStyle`
   button {
     &:hover {
       outline: none;
-      border: none;
     }
     &:active {
       outline: none;
-      border: none;
     }
     cursor: pointer;
+  }
+
+  input,textarea {
+    &:focus {
+      outline: none;
+    }
   }
 `;

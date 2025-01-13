@@ -24,6 +24,7 @@ const MainContainer = styled.div`
   justify-content: center;
   margin-top: 240px;
   height: 100vh;
+  overflow: hidden;
 `;
 
 const MainContents = styled.div`
