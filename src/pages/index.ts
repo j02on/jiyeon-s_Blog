@@ -3,3 +3,4 @@ export * from './Introduction';
 export * from './Story';
 export * from './StoryWrite';
 export * from './StoryView';
+export * from './IntroductionEdit'

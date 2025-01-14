@@ -3,6 +3,24 @@ import { color } from '../theme';
 import { profile, instagram, github, linkedIn } from '../assets';
 
 export const Introduction = () => {
+  const stackDatas = [
+    { stack: 'javascript' },
+    { stack: 'React' },
+    { stack: 'HTML' },
+    { stack: 'CSS' },
+    { stack: 'Vite' },
+    { stack: 'Figma' },
+    { stack: 'Typescript' },
+    { stack: 'Next JS' },
+  ];
+
+  const projectDatas = [
+    {
+      title: 'PhotoIt',
+      content:
+        'PhotoIt은 기존의 네컷부스를 디지털화하여, 시공간의 제약없이 어디서든 이용할 수 있는 네컷사진 서비스 입니다.',
+    },
+  ];
   return (
     <IntroductionContainer>
       <IntroductionContent>
@@ -34,25 +52,19 @@ export const Introduction = () => {
           <IntroContent>
             <Keyword>Stack</Keyword>
             <StackContainer>
-              <Stack>javascript</Stack>
-              <Stack>React</Stack>
-              <Stack>HTML</Stack>
-              <Stack>CSS</Stack>
-              <Stack>Vite</Stack>
-              <Stack>Figma</Stack>
-              <Stack>Typescript</Stack>
-              <Stack>Next JS</Stack>
+              {stackDatas.map((data) => (
+                <Stack>{data.stack}</Stack>
+              ))}
             </StackContainer>
           </IntroContent>
           <IntroContent>
             <Keyword>Project</Keyword>
-            <ProjectContainer>
-              <ProjectTitle>PhotoIt</ProjectTitle>
-              <ProjectContent>
-                PhotoIt은 기존의 네컷부스를 디지털화하여, 시공간의 제약없이
-                어디서든 이용할 수 있는 네컷사진 서비스 입니다.
-              </ProjectContent>
-            </ProjectContainer>
+            {projectDatas.map((data) => (
+              <ProjectContainer>
+                <ProjectTitle>{data.title}</ProjectTitle>
+                <ProjectContent>{data.content}</ProjectContent>
+              </ProjectContainer>
+            ))}
           </IntroContent>
         </IntroContainer>
         {true && (

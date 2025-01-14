@@ -31,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   input,textarea {
+    background-color: transparent;
     &:focus {
       outline: none;
     }
