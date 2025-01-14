@@ -4,11 +4,25 @@ type BtnType = {
   width?: number;
   color?: string;
   children: string;
+  fontSize?: number;
+  onClick?: () => void;
 };
 
-export const Button = ({ width = 160, color, children }: BtnType) => {
+export const Button = ({
+  width = 160,
+  color,
+  children,
+  fontSize = 16,
+  onClick,
+}: BtnType) => {
   return (
-    <BtnContainer width={width} color={color} type="button">
+    <BtnContainer
+      width={width}
+      color={color}
+      type="button"
+      fontSize={fontSize}
+      onClick={onClick}
+    >
       {children}
     </BtnContainer>
   );
@@ -24,4 +38,5 @@ const BtnContainer = styled.button<BtnType>`
   background-color: transparent;
   border: 1px solid ${({ color }) => color};
   border-radius: 12px;
+  font-size: ${({ fontSize }) => fontSize}px;
 `;
